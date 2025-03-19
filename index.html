@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotional Support for Jubeena</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Emotional Support for Jubeena</h1>
+        <p>Select your emotion:</p>
+        <div class="buttons">
+            <button onclick="showQuote('happiness')">Happiness</button>
+            <button onclick="showQuote('sadness')">Sadness</button>
+            <button onclick="showQuote('anxiety')">Anxiety</button>
+            <button onclick="showQuote('anger')">Anger</button>
+            <button onclick="showQuote('loneliness')">Loneliness</button>
+            <button onclick="showQuote('fear')">Fear</button>
+        </div>
+        <div class="quote-box">
+            <p id="quote">Click a button to receive a Quranic verse.</p>
+        </div>
+        <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

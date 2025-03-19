@@ -1,0 +1,96 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #006400;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 100, 0, 0.3);
+    transform: translateZ(10px);
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transform: translateZ(5px);
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05) translateZ(10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+#quote {
+    font-size: 18px;
+    font-style: italic;
+    color: #444;
+    margin-top: 20px;
+    padding: 10px;
+    background: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    transform: rotateY(5deg);
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #f8f9fa;
+}
+
+.dark-mode .container {
+    background: #1e1e1e;
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode button {
+    background-color: #28a745;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode button:hover {
+    background-color: #218838;
+    transform: scale(1.05) translateZ(10px);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container, button, #quote {
+    animation: fadeInUp 0.8s ease-in-out;
+}
